@@ -1,12 +1,11 @@
 # yggdrasil
 
-![yggdrasil](imgur.com image replace me!)
-
 *A short description of the keyboard/project*
 
 * Keyboard Maintainer: [David Ribeiro](https://github.com/LoyalPotato)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported: ProMicro Type-C, Yggdrasil PCB
+* Hardware Availability: [USB C ProMicro](https://www.aliexpress.com/item/1348800135.html)
+* Keyboard Repo: [Yggdrasil](https://github.com/LoyalPotato/yggdrasil)
 
 Make example for this keyboard (after setting up your build environment):
 
