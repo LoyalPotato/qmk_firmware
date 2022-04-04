@@ -1,6 +1,11 @@
 # yggdrasil
+<div align="center">
+  <img width="300" height="300" src="https://raw.githubusercontent.com/LoyalPotato/yggdrasil/main/media/logo_white_bg_text.svg" alt="Yggdrasil">
+</div>
 
-*A short description of the keyboard/project*
+This is yggdrasil's qmk configuration files. The repo for the design, schematics and other stuff can be found [here](https://github.com/LoyalPotato/yggdrasil)
+
+It's a 36% split keyboard that is tailored to be comfortable to my hand span.
 
 * Keyboard Maintainer: [David Ribeiro](https://github.com/LoyalPotato)
 * Hardware Supported: ProMicro Type-C, Yggdrasil PCB
