@@ -1,7 +1,9 @@
-# yggdrasil
+# Yggdrasil
 <div align="center">
   <img width="300" height="300" src="https://raw.githubusercontent.com/LoyalPotato/yggdrasil/main/media/logo_white_bg_text.svg" alt="Yggdrasil">
 </div>
+</br>
+</br>
 
 This is yggdrasil's qmk configuration files. The repo for the design, schematics and other stuff can be found [here](https://github.com/LoyalPotato/yggdrasil)
 
