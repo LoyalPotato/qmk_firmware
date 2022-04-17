@@ -25,6 +25,7 @@
 
 #define DIODE_DIRECTION COL2ROW
 
+#define TAPPING_TOGGLE 2
 /*
  * Feature disable options
  *  These options are also useful to firmware size reduction.
