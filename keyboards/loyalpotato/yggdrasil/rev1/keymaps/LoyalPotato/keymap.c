@@ -13,12 +13,22 @@ enum yggdrasil_keymap_layers = {
  FN_LAYER,
 }
 
+#define KC_NUM_LAYER LT(NUM_LAYER, KC_QUOTE)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BASE_LAYER] = LAYOUT_split_3x5_3(
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
-        KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,
-        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,
-                                   KC_ESC, KC_LCTL, KC_LSFT,           KC_ENT,  KC_SPC,  KC_BSPC
+        KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SEMICOLON,
+        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_NUM_LAYER,
+                          TT(SYM_LAYER), KC_LCTL, KC_LSFT,           KC_ENT,  KC_SPC,  KC_BSPC
     ),
-     
+    
+    [SYM_LAYER] = LAYOUT_split_3x5_3(
+        KC_EXLM,    KC_AT,    KC_HASH,    KC_DLR,    KC_LEFT_BRACKET,                               KC_RIGHT_BRACKET,    KC_PERC,    KC_AMPR,    KC_PEQL,    KC_PLUS,
+        KC_ASTR,    KC_PIPE,    KC_UNDS,    KC_F,    KC_LPRN,                                          KC_RPRN,    KC_RALT,    KC_RSFT,   KC_RCTL,    KC_PMNS,
+        KC_GRV,    KC_TILD,    KC_CIRC,    KC_V,    KC_B,                                          KC_PSLS,    KC_QUES,    KC_BSLS, XXXXXXX,  XXXXXXX,
+                                  KC_TRNS, TODO-LAYER-SWITCH, KC_TAB,                     KC_ESC,  KC_RGUI,  KC_DEL
+    ),
+
+
 };
