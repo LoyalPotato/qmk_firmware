@@ -9,7 +9,6 @@
 #define PRODUCT_ID 0xDA01 // yggdrasil/rev01
 #define DEVICE_VER 0x0001
 #define PRODUCT Yggdrasil
-#define MANUFACTURER David_Ribeiro
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 5
 
@@ -22,8 +21,6 @@
   { D7, E6, B4, B5 }
 #define MATRIX_COL_PINS_RIGHT \
   { F7, B1, B3, B2, B6 }
-
-#define DIODE_DIRECTION COL2ROW
 
 #define TAPPING_TOGGLE 2
 /*

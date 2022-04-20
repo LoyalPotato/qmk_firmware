@@ -15,9 +15,7 @@
     "processor": "atmega32u4",
     "url": "https://github.com/LoyalPotato/yggdrasil",
     "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x26DB",
-        "vid": "0xFEED"
+        "device_version": "1.0.0"
     },
     "layouts": {
         "LAYOUT_split_3x5_3": {
