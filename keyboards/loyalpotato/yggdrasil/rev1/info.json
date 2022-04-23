@@ -2,14 +2,13 @@
     "manufacturer": "David Ribeiro",
     "keyboard_name": "yggdrasil",
     "maintainer": "LoyalPotato",
-    "bootloader": "atmel-dfu",
     "features": {
-        "bootmagic": true,
+        "bootmagic": false,
         "command": false,
         "console": false,
-        "extrakey": true,
-        "mousekey": true,
-        "nkro": true
+        "extrakey": false,
+        "mousekey": false,
+        "nkro": false
     },
     "diode_direction": "COL2ROW",
     "processor": "atmega32u4",
@@ -30,7 +29,7 @@
                 { "label": "R02", "x": 12, "y": 0 },
                 { "label": "R03", "x": 13, "y": 0 },
                 { "label": "R04", "x": 14, "y": 0 },
-        
+
                 { "label": "L10", "x": 0, "y": 1 },
                 { "label": "L11", "x": 1, "y": 1 },
                 { "label": "L12", "x": 2, "y": 1 },
@@ -59,7 +58,6 @@
                 { "label": "R30", "x": 7.5, "y": 3 },
                 { "label": "R31", "x": 8.5, "y": 3 },
                 { "label": "R32", "x": 9.5, "y": 3 }
-
             ]
         }
     }
