@@ -16,11 +16,8 @@
 //#define MATRIX_COL_PINS { F7, B1, B3, B2, B6 }
 #define MATRIX_COL_PINS { B6, B2, B3, B1, F7 }
 
-#define MATRIX_COL_PINS_RIGHT { F7, B1, B3, B2, B6 }
-
 #define MASTER_LEFT
 
 #define SOFT_SERIAL_PIN D2
-
 
 #define TAPPING_TOGGLE 2
