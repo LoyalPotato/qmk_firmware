@@ -3,12 +3,13 @@
 
 enum yggdrasil_keymap_layers {
  BASE_LAYER,
+ MAC_BASE_LAYER,
  NUM_NAV_LAYER,
  SYM_LAYER,
  FN_LAYER,
  MEDIA_LAYER,
  NAV_LAYER,
- GAME_LAYER
+ GAME_LAYER,
 };
 
 #define KC_NUM_NAV_LAYER LT(NUM_NAV_LAYER, KC_QUOTE)
@@ -20,16 +21,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SEMICOLON,
         KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_SYM_LAYER,  KC_NUM_NAV_LAYER,
-                          TT(GAME_LAYER), KC_LCTL, KC_LSFT,                  KC_ENT,  KC_SPC,  KC_BSPC
+                          KC_LALT, KC_LCTL, KC_LSFT,                  KC_ENT,  KC_SPC,  KC_BSPC
+    ),
+    [MAC_BASE_LAYER] = LAYOUT(
+        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
+        KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SEMICOLON,
+        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_SYM_LAYER,  KC_NUM_NAV_LAYER,
+                          KC_LALT, KC_LCTL, KC_LSFT,                  KC_ENT,  KC_SPC,  KC_BSPC
     ),
     [SYM_LAYER] = LAYOUT(
-        KC_EXLM,    KC_AT,    KC_HASH,    KC_DLR,    KC_LEFT_BRACKET,                               KC_RIGHT_BRACKET,    KC_PERC,    KC_AMPR,    KC_PEQL,    KC_PLUS,
-        KC_ASTR,    KC_PIPE,    KC_UNDS,    KC_F,    KC_LPRN,                                       KC_RPRN,    KC_RALT,    KC_RSFT,   KC_RCTL,    KC_PMNS,
-        KC_GRV,    KC_TILD,    KC_CIRC,    KC_PRINT_SCREEN,    XXXXXXX,                             KC_PSLS,    KC_QUES,    KC_BSLS, XXXXXXX,  TT(MEDIA_LAYER),
-                                      KC_LGUI, KC_TRNS, KC_TAB,                           KC_ESC,   KC_RGUI,    KC_DEL                 
+        KC_EXLM,    KC_AT,    KC_HASH,    KC_DLR,    KC_LEFT_BRACKET,                                   KC_RIGHT_BRACKET,    KC_PERC,    KC_AMPR,    KC_PEQL,    KC_PLUS,
+        KC_ASTR,    KC_PIPE,    KC_UNDS,    TO(MAC_BASE_LAYER),    KC_LPRN,                                KC_RPRN,    KC_LALT,    KC_RSFT,   KC_RCTL,    KC_PMNS,
+        KC_GRV,    KC_TILD,    KC_CIRC,    KC_PRINT_SCREEN,    TT(GAME_LAYER),                             KC_PSLS,    KC_QUES,    KC_BSLS, XXXXXXX,  TT(MEDIA_LAYER),
+                                      KC_LGUI, KC_LCTL, KC_TAB,                           KC_ESC,   KC_RGUI,    KC_DEL                 
     ),
     [NUM_NAV_LAYER] = LAYOUT(
-        KC_HOME,    KC_PAGE_UP,    KC_PAGE_DOWN,    KC_PAGE_DOWN,    KC_TRNS,                               KC_TRNS, KC_1,    KC_2,    KC_3,    KC_TRNS,
+        KC_HOME,    KC_PAGE_UP,    KC_PAGE_DOWN,    KC_PAGE_DOWN,    KC_END,                               KC_0, KC_1,    KC_2,    KC_3,    KC_TRNS,
         KC_TRNS,    KC_LEFT,    KC_UP,    KC_RIGHT,    KC_TRNS,                                             KC_TRNS,    KC_4,    KC_5,    KC_6,    KC_TRNS,
         KC_TRNS,    KC_TRNS,    KC_DOWN,    KC_TRNS,    KC_TRNS,                                            KC_TRNS,     KC_7,    KC_8, KC_9,  XXXXXXX,
                                 TO(BASE_LAYER), KC_LCTL, KC_LSFT,                          MO(FN_LAYER),  KC_SPC,  KC_BSPC
