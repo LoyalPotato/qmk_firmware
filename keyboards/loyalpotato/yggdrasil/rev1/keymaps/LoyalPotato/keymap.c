@@ -25,20 +25,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [SYM_LAYER] = LAYOUT(
         KC_EXLM,    KC_AT,    KC_HASH,    KC_DLR,    KC_LEFT_BRACKET,                                   KC_RIGHT_BRACKET,    KC_PERC,    KC_AMPR,    KC_EQL,    KC_PLUS,
-        KC_ASTR,    KC_PIPE,    KC_UNDS,    KC_DEL,    KC_LPRN,                                        KC_RPRN,    KC_LALT,    KC_RSFT,   KC_LGUI,    KC_PMNS,
-        KC_GRV,    KC_TILD,    KC_CIRC,    KC_PRINT_SCREEN,    TT(GAME_LAYER),                          KC_PSLS,    KC_QUES,    KC_BSLS,  KC_ESC,  KC_LCTL,
-                                      KC_SPC, TT(MEDIA_LAYER), KC_TAB,                           XXXXXXX,   XXXXXXX,    XXXXXXX                 
+        KC_ASTR,    KC_PIPE,    KC_UNDS,    KC_DEL,    KC_LPRN,                                         KC_RPRN,    KC_PSLS,    KC_QUES,   KC_BSLS,    KC_PMNS,
+        KC_GRV,    KC_TILD,    KC_CIRC,    KC_PRINT_SCREEN,    TT(GAME_LAYER),                          KC_LALT,    KC_LCTL,    KC_LGUI,  KC_ESC,  KC_RSFT,
+                                                KC_SPC, TT(MEDIA_LAYER), KC_TAB,                 XXXXXXX,   XXXXXXX,    XXXXXXX                 
     ),
     [NUM_NAV_LAYER] = LAYOUT(
-        KC_HOME,    KC_PAGE_UP,    KC_PAGE_DOWN,    KC_PAGE_DOWN,    KC_END,                               KC_0, KC_1,    KC_2,    KC_3,    KC_TRNS,
+        KC_HOME,    KC_PAGE_UP,    KC_PAGE_DOWN,    KC_PAGE_DOWN,    KC_END,                                KC_0, KC_1,    KC_2,    KC_3,    KC_TRNS,
         KC_TRNS,    KC_LEFT,    KC_UP,    KC_RIGHT,    KC_TRNS,                                             MO(FN_LAYER),    KC_4,    KC_5,    KC_6,    KC_TRNS,
         KC_TRNS,    KC_TRNS,    KC_DOWN,    KC_TRNS,    KC_TRNS,                                            KC_LALT,     KC_7,    KC_8, KC_9,  KC_RSFT,
-                                KC_LGUI, KC_LCTL, KC_LSFT,                          KC_SPC,  XXXXXXX,  KC_BSPC
+                                KC_LCTL, KC_LGUI, KC_LSFT,                                          XXXXXXX,  XXXXXXX,  XXXXXXX
     ),
     [FN_LAYER] = LAYOUT(
-        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_F1,    KC_F2,    KC_F3,   KC_F4,   KC_F5, 
-        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,
-        KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                               KC_F11,    KC_F12,    XXXXXXX, XXXXXXX,  XXXXXXX,
+        KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,                                       KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS,  KC_TRNS, 
+        KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,                                      XXXXXXX,    KC_TRNS,    KC_TRNS, KC_TRNS,  KC_TRNS,
+        KC_F11,    KC_F12,    KC_LALT,    KC_TRNS,    KC_TRNS,                               KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS,  KC_TRNS,
                           TO(BASE_LAYER), KC_LCTL, KC_LSFT,                           KC_ENT,  KC_SPC,  KC_BSPC
     ),
     [MEDIA_LAYER] = LAYOUT(

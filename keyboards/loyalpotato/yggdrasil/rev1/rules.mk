@@ -20,3 +20,4 @@ RGBLIGHT_SUPPORTED = no    # RGB underglow is supported, but not enabled by defa
 
 SPLIT_KEYBOARD = yes
 LAYOUTS = split_3x5_3
+LTO_ENABLE = yes
